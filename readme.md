@@ -5,11 +5,11 @@ Inspired by [vim-textobj-latex](https://github.com/rbonvall/vim-textobj-latex/tr
 
 The plugin provides the following text objects:
 
-|a |i |Description                                |
-|--|--|-------------------------------------------|
-|am|im|Inline math equation `$y = e^x$`           |
-|aM|iM|Block math equation `$ sum_(i in NN) x_i $`|
-|al|il|List item `- item` or `+ numbered item`    |
+|a   |i   |Description                                |
+|----|----|-------------------------------------------|
+|`am`|`im`|Inline math equation `$y = e^x$`           |
+|`aM`|`iM`|Block math equation `$ sum_(i in NN) x_i $`|
+|`al`|`il`|List item `- item` or `+ numbered item`    |
 
 # Installation
 The plugin depends on [`kana/vim-textobj-user`](https://github.com/kana/vim-textobj-user).
