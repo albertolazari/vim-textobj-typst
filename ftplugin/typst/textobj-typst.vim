@@ -7,12 +7,20 @@ endif
 
 call textobj#user#plugin('typst', {
 \  'math-inline-equation-a': {
-\     '*pattern*': '[$][^$]*[$]',
+\     '*pattern*': '[$]\S[^$]*\S[$]',
 \     'select': 'am',
 \   },
 \  'math-inline-equation-i': {
-\     '*pattern*': '[$]\zs[^$]*\ze[$]',
+\     '*pattern*': '[$]\zs\S[^$]*\S\ze[$]',
 \     'select': 'im',
+\   },
+\  'math-block-equation-a': {
+\     '*pattern*': '[$]\s\+[^$]*\s\+[$]',
+\     'select': 'aM',
+\   },
+\  'math-block-equation-i': {
+\     '*pattern*': '[$]\s\+\zs[^$]*\ze\s\+[$]',
+\     'select': 'iM',
 \   },
 \ })
 
