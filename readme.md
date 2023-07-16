@@ -30,8 +30,10 @@ git clone git://github.com/kana/vim-textobj-user
 git clone git://github.com/albertolazari/vim-textobj-typst
 ```
 
+In order to let Vim recognize the Typst filetype you may also need to install the [typst.vim](https://github.com/kaarmu/typst.vim) plugin
+
 # Author
-Alberto Lazari <alberto.lazari@gmail.com>
+Alberto Lazari \<alberto.lazari@gmail.com\>
 
 # License
 Same terms as Vim itself.
