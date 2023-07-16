@@ -22,6 +22,14 @@ call textobj#user#plugin('typst', {
 \     '*pattern*': '[$]\s\+\zs[^$]*\ze\s\+[$]',
 \     'select': 'iM',
 \   },
+\  'list-item-a': {
+\     '*pattern*': '^\s*\zs[-+]\s\+.*',
+\     'select': 'al',
+\   },
+\  'list-item-i': {
+\     '*pattern*': '^\s*[-+]\s\+\zs.*',
+\     'select': 'il',
+\   },
 \ })
 
 let g:loaded_textobj_typst = 1
