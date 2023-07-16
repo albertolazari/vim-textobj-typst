@@ -12,7 +12,7 @@ The plugin provides the following text objects:
 |`al`|`il`|List item `- item` or `+ numbered item`    |
 
 # Installation
-The plugin depends on [`kana/vim-textobj-user`](https://github.com/kana/vim-textobj-user).
+The plugin depends on [vim-textobj-user](https://github.com/kana/vim-textobj-user).
 It won't work unless you install `textobj-user` first
 
 If you use Vundle, add the following lines to your `.vimrc`:
