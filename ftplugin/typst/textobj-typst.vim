@@ -22,11 +22,11 @@ call textobj#user#plugin('typst', {
 \     'select': 'iM',
 \   },
 \  'list-item-a': {
-\     '*pattern*': '^\s*\zs[-+]\s\+\_.\{-}\_^\s*\ze[-+\n]',
+\     '*pattern*': '^\s*\zs[-+]\s\+\_.\{-}\_^\s*\ze[-+\n]\=',
 \     'select': 'al',
 \   },
 \  'list-item-i': {
-\     '*pattern*': '^\s*[-+]\s\+\zs\_.\{-}\ze\n\_^\s*[-+\n]',
+\     '*pattern*': '^\s*[-+]\s\+\zs\_.\{-}\ze\n\_^\s*[-+\n]\=',
 \     'select': 'il',
 \   },
 \  'bold-a': {
