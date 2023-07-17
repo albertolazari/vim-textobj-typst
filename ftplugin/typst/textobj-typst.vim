@@ -1,5 +1,4 @@
 " textobj-typst - Text objects for Typst
-" Author: Alberto Lazari <alberto.lazari@gmail.com
 
 if exists('g:loaded_textobj_typst')
   finish
@@ -29,6 +28,22 @@ call textobj#user#plugin('typst', {
 \  'list-item-i': {
 \     '*pattern*': '^\s*[-+]\s\+\zs\_.\{-}\ze\n\_^\s*[-+\n]',
 \     'select': 'il',
+\   },
+\  'bold-a': {
+\     '*pattern*': '[*].\{-}[*]',
+\     'select': 'a*',
+\   },
+\  'bold-i': {
+\     '*pattern*': '[*][*]\|[*]\zs.\{-}\ze[*]',
+\     'select': 'i*',
+\   },
+\  'emph-a': {
+\     '*pattern*': '_.\{-}_',
+\     'select': 'a_',
+\   },
+\  'emph-i': {
+\     '*pattern*': '__\|_\zs.\{-}\ze_',
+\     'select': 'i_',
 \   },
 \ })
 

@@ -10,6 +10,11 @@ The plugin provides the following text objects:
 |`am`|`im`|Inline math equation `$y = e^x$`           |
 |`aM`|`iM`|Block math equation `$ sum_(i in NN) x_i $`|
 |`al`|`il`|List item `- item` or `+ numbered item`    |
+|`a*`|`i*`|Bold text `*this is bold text*`            |
+|`a_`|`i_`|Emph text `_this is emph text_`            |
+
+Note that the inner text objects may not always work as expected. When having an empty text object like `$$`, the inner object is considered the entire one, not the empty selection inside it.
+For instance, typing `ci*` into `**` will delete it, instead of just placing the cursor inside it
 
 # Installation
 The plugin depends on [vim-textobj-user](https://github.com/kana/vim-textobj-user).
@@ -31,9 +36,3 @@ git clone git://github.com/albertolazari/vim-textobj-typst
 ```
 
 In order to let Vim recognize the Typst filetype you may also need to install the [typst.vim](https://github.com/kaarmu/typst.vim) plugin
-
-# Author
-Alberto Lazari \<alberto.lazari@gmail.com\>
-
-# License
-Same terms as Vim itself.
