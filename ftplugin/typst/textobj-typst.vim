@@ -26,7 +26,7 @@ call textobj#user#plugin('typst', {
 \     'select': 'al',
 \   },
 \  'list-item-i': {
-\     '*pattern*': '^\(\s*\)[-+]\(\s\+\)\zs\(\_.\(\_^\n\)\=\(\_^\1\s\2\)\=\)\{-}\ze\_^\s*[\S\Z]\=',
+\     '*pattern*': '^\(\s*\)[-+]\(\s\+\)\zs\(\ze\_.\(\_^\n\)\=\(\_^\1\s\2\)\=\)\{-}\_^\s*[\S\Z]\=',
 \     'select': 'il',
 \   },
 \  'bold-a': {
