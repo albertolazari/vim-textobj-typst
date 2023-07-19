@@ -6,11 +6,11 @@ endif
 
 call textobj#user#plugin('typst', {
 \  'math-inline-equation-a': {
-\     '*pattern*': '[$].\=[$]\|[$]\S.\{-}\S[$]',
+\     '*pattern*': '[$][^$]\=[$]\|[$]\S[^$]\{-}\S[$]',
 \     'select': 'am',
 \   },
 \  'math-inline-equation-i': {
-\     '*pattern*': '[$][$]\|[$]\zs.\=\ze[$]\|[$]\zs\S.\{-}\S\ze[$]',
+\     '*pattern*': '[$][$]\|[$]\zs[^$]\=\ze[$]\|[$]\zs\S[^$]\{-}\S\ze[$]',
 \     'select': 'im',
 \   },
 \  'math-block-equation-a': {
